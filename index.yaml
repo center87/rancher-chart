@@ -3,7 +3,7 @@ entries:
   php-nginx:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-12-16T16:07:24.5025295+08:00"
+    created: "2025-12-16T16:37:04.2397872+08:00"
     description: PHP + NGINX Demo
     digest: 5c10be71571ae4c25f2fa05b45b1f163656ce23cb5f8a6d2cb42a12c2024233f
     name: php-nginx
@@ -11,4 +11,4 @@ entries:
     urls:
     - https://center87.github.io/rancher-chart/php-nginx-0.1.0.tgz
     version: 0.1.0
-generated: "2025-12-16T16:07:24.5020239+08:00"
+generated: "2025-12-16T16:37:04.2382214+08:00"
