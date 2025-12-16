@@ -1,0 +1,46 @@
+app:
+    name: php-nginx
+    replicaCount: 1
+    image:
+        repository: webdevops
+        tag: php-nginx:8.2
+        pullPolicy: Always
+
+    service:
+        type: ClusterIP
+        port: 80
+
+    ingress:
+        enabled: true
+        className: haproxy
+        host: example.com
+        secretName: nginx-tls-secret
+        path: /
+        pathType: Prefix
+        annotations:
+            haproxy.org/ssl-redirect: "true"
+            cert-manager.io/cluster-issuer: "letsencrypt-prod"
+
+sftp:
+    name: site-sftp
+    replicaCount: 1
+    image:
+        repository: atmoz/sftp
+        tag: latest
+        pullPolicy: IfNotPresent
+
+    credentials:
+        username: user1
+        password: password
+        uid: "1001"
+
+    service:
+        type: NodePort
+        port: 22
+        targetPort: 22
+        nodePort: 30480
+
+pvc:
+    name: site-data
+    storageClassName: longhorn
+    storage: 1Gi

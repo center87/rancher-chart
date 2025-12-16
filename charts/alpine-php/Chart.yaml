@@ -1,0 +1,6 @@
+apiVersion: v2
+name: php-nginx
+description: PHP + NGINX Demo
+type: application
+version: 0.1.0        # Chart 版本
+appVersion: "1.0.0"   # App 版本
