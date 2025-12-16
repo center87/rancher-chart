@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  php-nginx:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-12-16T16:00:18.2544197+08:00"
+    description: PHP + NGINX Demo
+    digest: 5c10be71571ae4c25f2fa05b45b1f163656ce23cb5f8a6d2cb42a12c2024233f
+    name: php-nginx
+    type: application
+    urls:
+    - https://github.com/center87/rancher-chart/php-nginx-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-12-16T16:00:18.2533551+08:00"
