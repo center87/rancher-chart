@@ -14,21 +14,8 @@ spec:
       labels:
         app: {{ .Values.app.name }}
     spec:
-
-      initContainers:
-        - name: fix-permission
-          image: busybox
-          command:
-            - sh
-            - -c
-            - |
-                chcon -Rt svirt_sandbox_file_t /usr/share/nginx/html || true
-                chown -R 1001:1001 /usr/share/nginx/html
-                chmod -R 775 /usr/share/nginx/html
-          volumeMounts:
-            -   name: site-data
-                mountPath: /usr/share/nginx/html
-
+      securityContext:
+        fsGroup: 1001
       containers:
         - name: nginx
           image: "{{ .Values.app.image.repository }}:{{ .Values.app.image.tag }}"
