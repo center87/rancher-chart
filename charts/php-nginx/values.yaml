@@ -2,8 +2,8 @@ app:
     name: php-nginx
     replicaCount: 1
     image:
-        repository: webdevops
-        tag: php-nginx:8.2
+        repository: webdevops/php-nginx
+        tag: 8.2
         pullPolicy: Always
 
     service:
