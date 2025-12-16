@@ -22,7 +22,7 @@ spec:
             - containerPort: 80
           volumeMounts:
             - name: site-data
-              mountPath: /usr/share/nginx/html
+              mountPath: /app
       volumes:
         - name: site-data
           persistentVolumeClaim:

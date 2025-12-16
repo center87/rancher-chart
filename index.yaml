@@ -10,5 +10,5 @@ entries:
     type: application
     urls:
     - https://center87.github.io/rancher-chart/php-nginx-0.1.0.tgz
-    version: 0.1.0
+    version: 0.1.1
 generated: "2025-12-16T16:45:59.5073369+08:00"
