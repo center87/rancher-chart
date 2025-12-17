@@ -3,22 +3,12 @@ entries:
   php-nginx:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-12-16T18:55:08.1892163+08:00"
+    created: "2025-12-17T10:00:27.5322779+08:00"
     description: PHP + NGINX Demo
-    digest: b2258e9d0a59de898f95e8959a7376b1cb5bbee44a002498fe57311e8250f589
-    name: php-nginx
-    type: application
-    urls:
-    - https://center87.github.io/rancher-chart/php-nginx-0.1.2.tgz
-    version: 0.1.2
-  - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2025-12-16T18:55:08.1887078+08:00"
-    description: PHP + NGINX Demo
-    digest: 5efe29c46f1d4cbfd95879fe34bdd62d3ba8cad6767372ccebafd50508292d36
+    digest: c08721b704a09b65b405de228dd4c239a348912892bebb895ca277916e03883a
     name: php-nginx
     type: application
     urls:
     - https://center87.github.io/rancher-chart/php-nginx-0.1.0.tgz
     version: 0.1.0
-generated: "2025-12-16T18:55:08.186067+08:00"
+generated: "2025-12-17T10:00:27.5312198+08:00"
